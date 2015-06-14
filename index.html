@@ -11,8 +11,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/scrollview.js"></script>
 
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+         <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
       
 
@@ -24,6 +26,9 @@ $( document ).ready(function() {
     });
 </script>
 
+<script type="text/javascript">
+
+</script>
 
 
     </head>
@@ -31,10 +36,10 @@ $( document ).ready(function() {
         <div class="wrapper">
 <!-- NAVBAR -->
            <div class="navbar-wrapper">
-      <div class="container-fluid head_container">
+      <div class="container-fluid">
 
         <nav class="navbar navbar-custom navbar-static-top">
-          <div class="container-fluid head_container">
+          <div class="container-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -46,6 +51,7 @@ $( document ).ready(function() {
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
+
                 <li class="active"><a href="#"><span>Homepage</span>Home</a></li>
                 <li><a href="#about"><span>Who Are We ?</span>About</a></li>
                 <li><a href="#contact"><span>My Portfolio</span>Projects</span></a></li>
@@ -61,7 +67,7 @@ $( document ).ready(function() {
 <!-- End NAVBAR -->
 
 <!-- SLIDER -->
-<div id="carousel" class="carousel slide" data-ride="carousel">
+<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
 
 <div style="position:relative;">
   <!-- Wrapper for slides -->
@@ -69,22 +75,22 @@ $( document ).ready(function() {
     <div class="item active">
       <img src="images/slides/sliderOne.jpg" alt="...">
            <div class="carousel-caption">
-              <h2>Example headline.</h2>
+              <h2>Check Out OUR latest PROJECTS</h2>
               <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
             </div>
   
     </div>
     <div class="item">
-      <img src="images/slides/sliderOne.jpg" alt="...">
+      <img src="images/slides/sliderTwo.jpg" alt="...">
            <div class="carousel-caption">
-              <h2>Example headline.</h2>
+              <h2>Guarantee 5 Star Quality Work</h2>
               <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
             </div>
     </div>
     <div class="item">
-      <img src="images/slides/sliderOne.jpg" alt="...">
+      <img src="images/slides/sliderThree.jpg" alt="...">
            <div class="carousel-caption">
-              <h2>Example headline.</h2>
+              <h2>Stay connected by reading the blog</h2>
               <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
             </div>
     </div>
@@ -102,67 +108,103 @@ $( document ).ready(function() {
 
  
 </div> <!-- Carousel -->
-<div class="container-fluid">
+
+<section class="featuredSection">
+<div class="container-fluid nopadding">
 
 <div calss="row">
-
+<article class="featureBlock">
 <div class="col-md-4">
-<h4>Title</h4>
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-<a href="">Find out More</a>
+
+<h4><i class="icon-search icon-2x pull-left"></i> Check Out OUR latest PROJECTS</h4>
+   <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.</p>
+<a href=""><i class="icon-double-angle-right"></i>Find out More</a>
 </div>
-
+</article>
+<article class="featureBlock">
 <div class="col-md-4">
-<h4>Title</h4>
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-<a href="">Find out More</a>
+
+<h4><i class="icon-star-empty icon-2x pull-left"></i>Guarantee 5 Star Quality Work</h4>
+   <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.</p>
+<a href=""><i class="icon-double-angle-right"></i>Find out More</a>
 </div>
-
+</article>
+<article class="featureBlock">
 <div class="col-md-4">
-<h4>Title</h4>
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-<a href="">Find out More</a>
+
+<h4><i class="icon-file-text icon-2x pull-left"></i>Stay connected by reading the blog</h4>
+   <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.</p>
+<a href=""><i class="icon-double-angle-right"></i>Find out More</a>
         </div>
+</article>
 
     </div>
 
 </div>
-
-<div class="container-fluid">
+</section>
+<section id="CurrentProjects">
+   
+   
+<div class="container-fluid nopadding">
+  <div class="col-md-12">
+<header> 
     <h4>My latest Work</h4>
-
-    <div class="col-sm-6 col-md-3">
-<img src="images/project1.jpg" />
-<h4>Title</h4>
+</header>
+</div>
+<article>
+    <div class="col-sm-6 col-md-3 projectBlock pull-left">
+<img src="images/project1.jpg"/>
+<h4>Vallarta Brochure</h4>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-  <a href="">Find out More</a>
+  <a href=""><i class="icon-double-angle-right"></i>Find out More</a>
     </div>
-
- <div class="col-sm-6 col-md-3">
+</article>
+<article>
+ <div class="col-sm-6 col-md-3 projectBlock">
 <img src="images/project2.jpg" />
-<h4>Title</h4>
+<h4>Business cards</h4>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-  <a href="">Find out More</a>
+  <a href=""><i class="icon-double-angle-right"></i>Find out More</a>
     </div>
-
-
- <div class="col-sm-6 col-md-3">
+</article>
+<article>
+ <div class="col-sm-6 col-md-3 projectBlock pull-right">
 <img src="images/project3.jpg" />
-<h4>Title</h4>
+<h4>Business cards</h4>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-  <a href="">Find out More</a>
+  <a href=""><i class="icon-double-angle-right"></i>Find out More</a>
     </div>
-
- <div class="col-sm-6 col-md-3">
+</article>
+<article>
+ <div class="col-sm-6 col-md-3 projectBlock">
 <img src="images/project4.jpg" />
-<h4>Title</h4>
+<h4>Website design</h4>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-  <a href="">Find out More</a>
+  <a href=""><i class="icon-double-angle-right"></i>Find out More</a>
     </div>
+</article>
 
 </div>
-
+</article>
+</section>
 </div> <!-- End of Wrapper-->
+<footer>
+<div class="container-fluid">
+<div class="footer_wrap">
+<div class="row">
+<div class="col-md-6">
+<p class="credit_left">All Content Copyright 2012 - Blitz. All Rights Reserved. </p>
+</div>
+
+<div class="col-md-6">
+<p class="credit_right">Site Developed by <span>Best PSD Freebies</span></p>
+</div>
+
+</div>
+</div>
+
+</div>
+</footer>
 <!-- END SLIDER -->
 
     </body>
