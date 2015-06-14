@@ -27,7 +27,14 @@ $( document ).ready(function() {
 </script>
 
 <script type="text/javascript">
-
+$( document ).ready(function() {
+$("#boxOne").inViewport(function(px){
+    if(px) $(this).addClass("triggerBoxOne") ;
+});
+$("#boxTwo").inViewport(function(px){
+    if(px) $(this).addClass("triggerBoxTwo") ;
+});
+});
 </script>
 
 
@@ -118,7 +125,7 @@ $( document ).ready(function() {
 
 <h4><i class="icon-search icon-2x pull-left"></i> Check Out OUR latest PROJECTS</h4>
    <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.</p>
-<a href=""><i class="icon-double-angle-right"></i>Find out More</a>
+<a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
 </div>
 </article>
 <article class="featureBlock">
@@ -126,7 +133,7 @@ $( document ).ready(function() {
 
 <h4><i class="icon-star-empty icon-2x pull-left"></i>Guarantee 5 Star Quality Work</h4>
    <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.</p>
-<a href=""><i class="icon-double-angle-right"></i>Find out More</a>
+<a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
 </div>
 </article>
 <article class="featureBlock">
@@ -134,7 +141,7 @@ $( document ).ready(function() {
 
 <h4><i class="icon-file-text icon-2x pull-left"></i>Stay connected by reading the blog</h4>
    <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.</p>
-<a href=""><i class="icon-double-angle-right"></i>Find out More</a>
+<a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
         </div>
 </article>
 
@@ -151,36 +158,36 @@ $( document ).ready(function() {
     <h4>My latest Work</h4>
 </header>
 </div>
-<article>
+<article id="boxOne" class="rotate">
     <div class="col-sm-6 col-md-3 projectBlock pull-left">
 <img src="images/project1.jpg"/>
 <h4>Vallarta Brochure</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-  <a href=""><i class="icon-double-angle-right"></i>Find out More</a>
+  <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. </p>
+  <a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
     </div>
 </article>
-<article>
+<article id="boxTwo" class="rotate">
  <div class="col-sm-6 col-md-3 projectBlock">
 <img src="images/project2.jpg" />
 <h4>Business cards</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-  <a href=""><i class="icon-double-angle-right"></i>Find out More</a>
+   <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. </p>
+  <a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
     </div>
 </article>
 <article>
  <div class="col-sm-6 col-md-3 projectBlock pull-right">
 <img src="images/project3.jpg" />
 <h4>Business cards</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-  <a href=""><i class="icon-double-angle-right"></i>Find out More</a>
+  <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. </p>
+  <a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
     </div>
 </article>
 <article>
  <div class="col-sm-6 col-md-3 projectBlock">
 <img src="images/project4.jpg" />
 <h4>Website design</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, enim. A sint repudiandae tempora, nulla aliquam</p>
-  <a href=""><i class="icon-double-angle-right"></i>Find out More</a>
+   <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. </p>
+  <a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
     </div>
 </article>
 
