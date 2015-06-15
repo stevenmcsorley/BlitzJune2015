@@ -34,6 +34,24 @@ $("#boxOne").inViewport(function(px){
 $("#boxTwo").inViewport(function(px){
     if(px) $(this).addClass("triggerBoxTwo") ;
 });
+$("#boxThree").inViewport(function(px){
+    if(px) $(this).addClass("triggerBoxThree") ;
+});
+$("#boxFour").inViewport(function(px){
+    if(px) $(this).addClass("triggerBoxFour") ;
+});
+
+$(".featureBlockOne").inViewport(function(px){
+    if(px) $(this).addClass("triggerBoxFeatOne") ;
+});
+
+$(".featureBlockTwo").inViewport(function(px){
+    if(px) $(this).addClass("triggerBoxFeatTwo") ;
+});
+
+$(".featureBlockThree").inViewport(function(px){
+    if(px) $(this).addClass("triggerBoxFeatThree") ;
+});
 });
 </script>
 
@@ -120,7 +138,7 @@ $("#boxTwo").inViewport(function(px){
 <div class="container-fluid nopadding">
 
 <div calss="row">
-<article class="featureBlock">
+<article class="featureBlock featureBlockOne">
 <div class="col-md-4">
 
 <h4><i class="icon-search icon-2x pull-left"></i> Check Out OUR latest PROJECTS</h4>
@@ -128,7 +146,7 @@ $("#boxTwo").inViewport(function(px){
 <a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
 </div>
 </article>
-<article class="featureBlock">
+<article class="featureBlock featureBlockTwo">
 <div class="col-md-4">
 
 <h4><i class="icon-star-empty icon-2x pull-left"></i>Guarantee 5 Star Quality Work</h4>
@@ -136,7 +154,7 @@ $("#boxTwo").inViewport(function(px){
 <a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
 </div>
 </article>
-<article class="featureBlock">
+<article class="featureBlock featureBlockThree">
 <div class="col-md-4">
 
 <h4><i class="icon-file-text icon-2x pull-left"></i>Stay connected by reading the blog</h4>
@@ -158,7 +176,7 @@ $("#boxTwo").inViewport(function(px){
     <h4>My latest Work</h4>
 </header>
 </div>
-<article id="boxOne" class="rotate">
+<article id="boxOne" class="slideIn">
     <div class="col-sm-6 col-md-3 projectBlock pull-left">
 <img src="images/project1.jpg"/>
 <h4>Vallarta Brochure</h4>
@@ -166,7 +184,7 @@ $("#boxTwo").inViewport(function(px){
   <a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
     </div>
 </article>
-<article id="boxTwo" class="rotate">
+<article id="boxTwo" class="slideIn">
  <div class="col-sm-6 col-md-3 projectBlock">
 <img src="images/project2.jpg" />
 <h4>Business cards</h4>
@@ -174,15 +192,15 @@ $("#boxTwo").inViewport(function(px){
   <a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
     </div>
 </article>
-<article>
- <div class="col-sm-6 col-md-3 projectBlock pull-right">
+<article id="boxThree" class="slideIn">
+ <div class="col-sm-6 col-md-3 projectBlock">
 <img src="images/project3.jpg" />
 <h4>Business cards</h4>
   <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. </p>
   <a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
     </div>
 </article>
-<article>
+<article id="boxFour" class="slideIn">
  <div class="col-sm-6 col-md-3 projectBlock">
 <img src="images/project4.jpg" />
 <h4>Website design</h4>

@@ -65,7 +65,7 @@ body
 {
   position: relative;
   top:0;
-  margin: 0 auto;
+  margin: 20px auto 0px;
   max-width:950px;
 
 }
@@ -86,8 +86,14 @@ margin-top:10px;
 
 .navbar-nav
 {
+
 float:right;  
 }
+.nav li
+{
+ 
+}
+ 
 
 .nav li a 
 {
@@ -111,7 +117,7 @@ float:right;
   background:transparent;
 }
 .nav li.active:after {
-  top: 0%;
+  top: -27%;
   left: 50%;
   border: solid transparent;
   content: " ";
@@ -355,8 +361,75 @@ font-size:12px!important;
 .featuredSection
 {
   padding-top:60px;
+  overflow:hidden;
 }
 
+.featureBlockOne
+{
+  position:relative;
+  bottom:-200px; 
+   transition: all 0.4s;  ease; 
+   -webkit-transition: all 0.4s;  ease;
+  -moz-transition: all 0.4s;  ease;
+  -o-transition: all 0.4s;  ease; 
+}
+
+.featureBlockTwo
+{
+  position:relative;
+  bottom:-200px; 
+   transition: all 0.5s;  ease; 
+   -webkit-transition: all 0.5s;  ease;
+  -moz-transition: all 0.5s;  ease;
+  -o-transition: all 0.5s;  ease; 
+}
+
+
+.featureBlockThree
+{
+  position:relative;
+  bottom:-200px; 
+   transition: all 0.6s;  ease; 
+   -webkit-transition: all 0.6s;  ease;
+  -moz-transition: all 0.6s;  ease;
+  -o-transition: all 0.6s;  ease; 
+}
+
+
+@media (max-width: 991px){
+
+.featureBlockOne
+{
+  position:relative;
+  bottom:-200px; 
+   transition: all 0.2s;  ease; 
+   -webkit-transition: all 0.2s;  ease;
+  -moz-transition: all 0.2s;  ease;
+  -o-transition: all 0.2s;  ease; 
+}
+
+.featureBlockTwo
+{
+  position:relative;
+  bottom:-200px; 
+   transition: all 0.2s;  ease; 
+   -webkit-transition: all 0.2s;  ease;
+  -moz-transition: all 0.2s;  ease;
+  -o-transition: all 0.2s;  ease; 
+}
+
+
+.featureBlockThree
+{
+  position:relative;
+  bottom:-200px; 
+   transition: all 0.2s;  ease; 
+   -webkit-transition: all 0.2s;  ease;
+  -moz-transition: all 0.2s;  ease;
+  -o-transition: all 0.2s;  ease; 
+}
+
+}
 
 
 .featureBlock h4
@@ -459,14 +532,26 @@ margin:0px 0px 60px;
 #CurrentProjects article div img
 {
 transition: all .2s ease-in-out;
--moz-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;*/
 width:100%;
+transform: rotate(0);
+-moz-transform: rotate(0);
 }
 #CurrentProjects article div img:hover
 {
-transform: scale(1.1); 
+/*transform: scale(1.1);*/ 
+   transition: 1s;
+   -moz-transition: 1s; 
+   transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
 }
 
+@media (max-width: 991px){
+#CurrentProjects article div img
+{
+  width:100%!important;
+}
+}
 
 .icon-double-angle-right
 {
@@ -482,6 +567,147 @@ transform: scale(1.1);
   color:#000;
   word-spacing:2px;
 }
+
+
+
+
+#boxOne
+{
+  position:relative;
+top:0px;
+left:-600px;
+ transition: all 1.5s;  ease; 
+   -webkit-transition: all 1.5s;  ease;
+  -moz-transition: all 1.5s;  ease;
+  -o-transition: all 1.5s;  ease; 
+}
+
+#boxTwo
+{
+  position:relative;
+top:0px;
+left:-1200px;
+ transition: all 1.5s;  ease; 
+   -webkit-transition: all 1.5s;  ease;
+  -moz-transition: all 1.5s;  ease;
+  -o-transition: all 1.5s;  ease;
+}
+
+#boxThree
+{
+  position:relative;
+top:0px;
+right:-1200px;
+ transition: all 1.5s;  ease; 
+   -webkit-transition: all 1.5s;  ease;
+  -moz-transition: all 1.5s;  ease;
+  -o-transition: all 1.5s;  ease;
+}
+
+#boxFour
+{
+  position:relative;
+top:0px;
+right:-600px;
+ transition: all 1.7s;  ease; 
+   -webkit-transition: all 1.7s;  ease;
+  -moz-transition: all 1.7s;  ease;
+  -o-transition: all 1.7s;  ease;
+
+}
+
+
+
+.slideIn.triggerBoxOne
+{ 
+transform: translate(600px,0px); 
+   -webkit-transform: translate: (600px,0px)
+  -moz-transform: translate: (600px,0px);
+  -o-transform: translate: (600px,0px);
+}
+
+.slideIn.triggerBoxTwo
+{
+  transform: translate(1200px,0px); 
+  -webkit-transform: translate: (1200px,0px);
+  -moz-transform: translate: (1200px,0px);
+  -o-transform: translate: (1200px,0px);
+}
+
+.slideIn.triggerBoxThree
+{ 
+  transform: translate(-1200px,0px);
+    -webkit-transform: translate: (-1200px,0px);
+  -moz-transform: translate: (-1200px,0px);
+  -o-transform: translate: (-1200px,0px);
+
+
+}
+
+.slideIn.triggerBoxFour
+{ 
+transform: translate(-600px,0px);
+   -webkit-transform: translate: (-600px,0px);
+  -moz-transform: translate: (-600px,0px);
+  -o-transform: translate: (-600px,0px);
+}
+
+
+
+.triggerBoxFeatOne
+{
+transform: translate(0px, -200px);
+   -webkit-transform: translate: (0px, -200px);
+  -moz-transform: translate: (0px, -200px);
+  -o-transform: translate: (0px, -200px); 
+}
+
+.triggerBoxFeatTwo
+{
+transform: translate(0px, -200px);
+   -webkit-transform: translate: (0px, -200px);
+  -moz-transform: translate: (0px, -200px);
+  -o-transform: translate: (0px, -200px); 
+}
+
+.triggerBoxFeatThree
+{
+transform: translate(0px, -200px);
+   -webkit-transform: translate: (0px, -200px);
+  -moz-transform: translate: (0px, -200px);
+  -o-transform: translate: (0px, -200px); 
+}
+
+
+@media (max-width: 991px){
+
+.triggerBoxFeatOne
+{
+transform: translate(0px, -200px);
+   -webkit-transform: translate: (0px, -200px);
+  -moz-transform: translate: (0px, -200px);
+  -o-transform: translate: (0px, -200px); 
+}
+
+.triggerBoxFeatTwo
+{
+transform: translate(0px, -200px);
+   -webkit-transform: translate: (0px, -200px);
+  -moz-transform: translate: (0px, -200px);
+  -o-transform: translate: (0px, -200px); 
+}
+
+.triggerBoxFeatThree
+{
+transform: translate(0px, -200px);
+   -webkit-transform: translate: (0px, -200px);
+  -moz-transform: translate: (0px, -200px);
+  -o-transform: translate: (0px, -200px); 
+}
+
+
+}
+
 
 footer
 {
@@ -510,45 +736,3 @@ background-position: 0% 0%;
 {
 
 }
-
-#boxOne
-{
-  position:relative;
-top:0px;
-left:-600px;
- transition: 0.5s; 
-}
-
-#boxTwo
-{
-  position:relative;
-top:0px;
-left:-1200px;
- transition: 0.5s; 
-}
-
-#boxThree
-{
-  position:relative;
-top:0px;
-right:-1200px;
- transition: 0.5s; 
-}
-
-#boxFour
-{
-  position:relative;
-top:0px;
-right:-600px;
- transition: 0.5s; 
-}
-
-
-
-.rotate.triggerBoxOne    { transform: translate(600px,0px); }
-
-.rotate.triggerBoxTwo    { transform: translate(1200px,0px); }
-
-.rotate.triggerBoxThree    { transform: translate(600px,0px); }
-
-.rotate.triggerBoxFour    { transform: translate(1200px,0px); }
