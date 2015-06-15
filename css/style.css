@@ -9,6 +9,30 @@ padding:0;
 margin:0;
 }
 
+/*== Boostrap Helpers ==*/
+.nopadding 
+{
+padding-left: 0 !important;
+margin: 0 !important;
+}
+.no-padding-right
+{
+  padding-right:0;
+  margin-right:0;
+}
+
+.no-padding-left
+{
+  padding-left:0;
+  margin-left:0;
+}
+
+
+body
+{
+  font-family: 'helvetica', arial;
+  border-top:5px solid #e8e8e8;
+}
 /*=== FONTS ===*/
 
 @font-face {
@@ -34,5 +58,671 @@ margin:0;
          url('fonts/bebas/bebas___-webfont.svg#bebasregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
+}
+
+.wrapper
+{
+  position: relative;
+  top:0;
+  margin: 0 auto;
+  max-width:950px;
+
+}
+
+/*== NAV ==*/
+.head_container
+{
+  padding-left:0!important;
+  padding-right:0!important;
+}
+.navbar-brand
+{
+font-family: 'pacificoregular';
+font-size: 46px;
+color: #000;
+margin-top:10px;
+}
+
+.navbar-nav
+{
+float:right;  
+}
+
+.nav li a 
+{
+  font-size:18px;
+  color:#000;
+  font-family: 'bebasregular';
+  color: #474747;
+}
+
+.nav li a span
+{
+  display: block;
+  font-weight: normal;
+  font-size:12px;
+  color:#bdbdbd;
+  padding-bottom:5px;
+
+}
+
+.nav li.active{
+  background:transparent;
+}
+.nav li.active:after {
+  top: 0%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(232, 232, 232, 0);
+  border-top-color: #e8e8e8;
+  border-width: 10px;
+  margin-left: -15px;
+}
+
+.carousel-inner .item.active:after
+{
+  bottom: 22%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(232, 232, 232, 0);
+  border-bottom-color: #e8e8e8;
+  border-width: 10px;
+  margin-left: -15px;
+}
+
+.navbar-toggle
+{
+  border-color:#000;
+  margin-top:20px;
+}
+
+.navbar-toggle
+{
+  border-color:#000;
+  margin-top:20px;
+}
+.navbar-toggle .icon-bar {
+    background-color: #000;
+}
+
+/*=== SLIDER ===*/
+
+.carousel {
+    margin-bottom: 0px;
+    padding:0px 15px;/* Keep it flush with all other elements */
+}
+/* Since positioning the image, we need to help out the caption */
+
+.static_caption
+{
+  position: absolute;
+  bottom: 0px;
+  left:0px;
+  z-index:999;
+}
+
+ .carousel-caption h4
+ {
+  font-family: 'bebasregular';
+text-shadow:0px 0px 0px!important;
+color:#000;
+font-size:18px!important;
+margin:10px;
+ }
+
+  .carousel-caption p
+  {
+text-shadow:0px 0px 0px!important;
+color:#000;
+font-size:12px!important;
+margin:10px;
+  }
+/* Declare heights because of positioning of img element */
+ .carousel .item {
+    width: 100%;
+    background-color: #f5f5f5;
+}
+.carousel-inner > .item > img {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+margin-left: 0;
+}
+
+.carousel-indicators{
+  position: absolute;
+   top: 75%;
+   right: 10px;
+   left: initial;
+}
+.carousel-indicators li {
+    display:inline-block;
+}
+.carousel-indicators{
+
+    width: auto;
+}
+
+
+
+
+.carousel-indicators li {
+  width: 20px;
+  height: 5px;
+  margin: 1px;
+  border: 3px solid #fff;
+  border-radius: 1px;
+}
+.carousel-indicators .active {
+  width: 20px;
+  height: 5px;
+  margin: 1px;
+  background-color: #444444;
+  border: 3px solid #444444;
+}
+
+
+@media (min-width: 768px) {
+    .carousel-caption p {
+        margin-bottom: 0px;
+        font-size: 21px;
+    }
+}
+
+
+
+
+
+
+.carousel-caption {
+  position: relative;
+color:#000;
+text-align: left;
+left:10px;
+right:0;
+width:100%;
+}
+
+
+ .carousel-caption h2
+ {
+text-shadow:0px 0px 0px!important;
+color:#818181;
+font-size:14px!important;
+margin:10px;
+
+ }
+
+  .carousel-caption p
+  {
+text-shadow:0px 0px 0px!important;
+color:#818181;
+font-size:12px!important;
+
+  }
+
+
+.carousel-inner{
+
+  max-height: 520px !important;
+}
+
+
+/*
+  Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
+  CSS from:       http://codepen.io/transportedman/pen/NPWRGq
+  and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
+  Inspired from:  http://codepen.io/Rowno/pen/Afykb 
+*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+/* END */
+
+
+.icon-search, .icon-star-empty, .icon-file-text
+{
+  color:#9a9a9a;
+  padding-top:0;
+ padding-right:15%;
+ padding-bottom:0;
+}
+
+
+.featuredSection
+{
+  padding-top:60px;
+  overflow:hidden;
+}
+
+.featureBlockOne
+{
+  position:relative;
+  bottom:-200px; 
+   transition: all 0.4s;  ease; 
+   -webkit-transition: all 0.4s;  ease;
+  -moz-transition: all 0.4s;  ease;
+  -o-transition: all 0.4s;  ease; 
+}
+
+.featureBlockTwo
+{
+  position:relative;
+  bottom:-200px; 
+   transition: all 0.5s;  ease; 
+   -webkit-transition: all 0.5s;  ease;
+  -moz-transition: all 0.5s;  ease;
+  -o-transition: all 0.5s;  ease; 
+}
+
+
+.featureBlockThree
+{
+  position:relative;
+  bottom:-200px; 
+   transition: all 0.6s;  ease; 
+   -webkit-transition: all 0.6s;  ease;
+  -moz-transition: all 0.6s;  ease;
+  -o-transition: all 0.6s;  ease; 
+}
+
+
+@media (max-width: 991px){
+
+.featureBlockOne
+{
+  position:relative;
+  bottom:-200px; 
+   transition: all 0.2s;  ease; 
+   -webkit-transition: all 0.2s;  ease;
+  -moz-transition: all 0.2s;  ease;
+  -o-transition: all 0.2s;  ease; 
+}
+
+.featureBlockTwo
+{
+  position:relative;
+  bottom:-200px; 
+   transition: all 0.2s;  ease; 
+   -webkit-transition: all 0.2s;  ease;
+  -moz-transition: all 0.2s;  ease;
+  -o-transition: all 0.2s;  ease; 
+}
+
+
+.featureBlockThree
+{
+  position:relative;
+  bottom:-200px; 
+   transition: all 0.2s;  ease; 
+   -webkit-transition: all 0.2s;  ease;
+  -moz-transition: all 0.2s;  ease;
+  -o-transition: all 0.2s;  ease; 
+}
+
+}
+
+
+.featureBlock h4
+{
+
+font-family: 'bebasregular';
+font-size:20px;
+line-height:22px;
+word-spacing:2px;
+padding-bottom:10px;
+}
+
+@media (max-width: 991px){
+
+  .featureBlock
+  {
+    margin:0px 0px 40px;
+  }
+
+}
+
+@media (max-width: 991px) and (min-width:429px) {
+
+.featureBlock h4
+{
+
+
+font-size:20px;
+line-height:46px;
+
+padding-bottom:10px;
+}
+
+}
+/*===== CurrentProjects ==*/
+
+
+#CurrentProjects
+{
+  overflow: hidden;
+margin:60px 0px 60px;
+}
+
+#CurrentProjects header h4
+{
+font-family: 'bebasregular';
+background:#fff;
+display:inline;
+text-align: center;
+padding:10px 20px;
+line-height: 36px;
+font-size:18px;
+}
+
+#CurrentProjects header
+{
+text-align: center;
+height:30px;
+width:100%;
+background-image: url('../images/header_background.png');
+background-repeat: repeat-x;
+margin:0px 0px 60px;
+}
+
+
+@media (max-width: 991px){
+
+  .projectBlock
+  {
+    margin:0px 0px 40px;
+  }
+
+}
+
+
+.projectBlock
+{
+  
+}
+
+.projectBlockLast img
+{
+
+}
+
+
+.projectBlock h4
+{
+  font-family: 'bebasregular';
+  font-size: 14px;
+}
+
+.projectBlock img
+{
+
+}
+
+
+
+#CurrentProjects article div img
+{
+transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;*/
+width:100%;
+transform: rotate(0);
+-moz-transform: rotate(0);
+}
+#CurrentProjects article div img:hover
+{
+/*transform: scale(1.1);*/ 
+   transition: 1s;
+   -moz-transition: 1s; 
+   transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+@media (max-width: 991px){
+#CurrentProjects article div img
+{
+  width:100%!important;
+}
+}
+
+.icon-double-angle-right
+{
+  margin-right:6px;
+  font-size: 16px;
+  font-weight:bold;
+}
+
+.more
+{
+   font-family: 'bebasregular';
+  font-size: 12px;
+  color:#000;
+  word-spacing:2px;
+}
+
+footer
+{
+background:#f5f5f5;
+min-height:75px;
+background-image: url('../images/footer_top_line.png');
+background-repeat: repeat-x;
+background-position: 0% 0%;
+
+}
+
+.footer_wrap
+{
+    position: relative;
+  top:0;
+  margin: 0 auto;
+  max-width:950px;
+}
+
+.credit_left
+{
+
+}
+
+.credit_right
+{
+
+}
+
+#boxOne
+{
+  position:relative;
+top:0px;
+left:-600px;
+ transition: all 1.5s;  ease; 
+   -webkit-transition: all 1.5s;  ease;
+  -moz-transition: all 1.5s;  ease;
+  -o-transition: all 1.5s;  ease; 
+}
+
+#boxTwo
+{
+  position:relative;
+top:0px;
+left:-1200px;
+ transition: all 1.5s;  ease; 
+   -webkit-transition: all 1.5s;  ease;
+  -moz-transition: all 1.5s;  ease;
+  -o-transition: all 1.5s;  ease;
+}
+
+#boxThree
+{
+  position:relative;
+top:0px;
+right:-1200px;
+ transition: all 1.5s;  ease; 
+   -webkit-transition: all 1.5s;  ease;
+  -moz-transition: all 1.5s;  ease;
+  -o-transition: all 1.5s;  ease;
+}
+
+#boxFour
+{
+  position:relative;
+top:0px;
+right:-600px;
+ transition: all 1.7s;  ease; 
+   -webkit-transition: all 1.7s;  ease;
+  -moz-transition: all 1.7s;  ease;
+  -o-transition: all 1.7s;  ease;
+
+}
+
+
+
+.rotate.triggerBoxOne
+{ 
+transform: translate(600px,0px); 
+   -webkit-transform: translate: (600px,0px)
+  -moz-transform: translate: (600px,0px);
+  -o-transform: translate: (600px,0px);
+}
+
+.rotate.triggerBoxTwo
+{
+  transform: translate(1200px,0px); 
+  -webkit-transform: translate: (1200px,0px);
+  -moz-transform: translate: (1200px,0px);
+  -o-transform: translate: (1200px,0px);
+}
+
+.rotate.triggerBoxThree
+{ 
+  transform: translate(-1200px,0px);
+    -webkit-transform: translate: (-1200px,0px);
+  -moz-transform: translate: (-1200px,0px);
+  -o-transform: translate: (-1200px,0px);
+
+
+}
+
+.rotate.triggerBoxFour
+{ 
+transform: translate(-600px,0px);
+   -webkit-transform: translate: (-600px,0px);
+  -moz-transform: translate: (-600px,0px);
+  -o-transform: translate: (-600px,0px);
+}
+
+
+
+.triggerBoxFeatOne
+{
+transform: translate(0px, -200px);
+   -webkit-transform: translate: (0px, -200px);
+  -moz-transform: translate: (0px, -200px);
+  -o-transform: translate: (0px, -200px); 
+}
+
+.triggerBoxFeatTwo
+{
+transform: translate(0px, -200px);
+   -webkit-transform: translate: (0px, -200px);
+  -moz-transform: translate: (0px, -200px);
+  -o-transform: translate: (0px, -200px); 
+}
+
+.triggerBoxFeatThree
+{
+transform: translate(0px, -200px);
+   -webkit-transform: translate: (0px, -200px);
+  -moz-transform: translate: (0px, -200px);
+  -o-transform: translate: (0px, -200px); 
+}
+
+
+@media (max-width: 991px){
+
+.triggerBoxFeatOne
+{
+transform: translate(0px, -200px);
+   -webkit-transform: translate: (0px, -200px);
+  -moz-transform: translate: (0px, -200px);
+  -o-transform: translate: (0px, -200px); 
+}
+
+.triggerBoxFeatTwo
+{
+transform: translate(0px, -200px);
+   -webkit-transform: translate: (0px, -200px);
+  -moz-transform: translate: (0px, -200px);
+  -o-transform: translate: (0px, -200px); 
+}
+
+.triggerBoxFeatThree
+{
+transform: translate(0px, -200px);
+   -webkit-transform: translate: (0px, -200px);
+  -moz-transform: translate: (0px, -200px);
+  -o-transform: translate: (0px, -200px); 
+}
+
 
 }

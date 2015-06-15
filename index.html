@@ -9,18 +9,62 @@
         <title>Homepage - Blitz</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="../js/bootstrap.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/scrollview.js"></script>
+
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+         <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      
+
+      <script>
+$( document ).ready(function() {
+    $('.carousel').carousel({
+        interval: 3000
+    })
+    });
+</script>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+$("#boxOne").inViewport(function(px){
+    if(px) $(this).addClass("triggerBoxOne") ;
+});
+$("#boxTwo").inViewport(function(px){
+    if(px) $(this).addClass("triggerBoxTwo") ;
+});
+$("#boxThree").inViewport(function(px){
+    if(px) $(this).addClass("triggerBoxThree") ;
+});
+$("#boxFour").inViewport(function(px){
+    if(px) $(this).addClass("triggerBoxFour") ;
+});
+
+$(".featureBlockOne").inViewport(function(px){
+    if(px) $(this).addClass("triggerBoxFeatOne") ;
+});
+
+$(".featureBlockTwo").inViewport(function(px){
+    if(px) $(this).addClass("triggerBoxFeatTwo") ;
+});
+
+$(".featureBlockThree").inViewport(function(px){
+    if(px) $(this).addClass("triggerBoxFeatThree") ;
+});
+});
+</script>
+
+
     </head>
     <body>
+        <div class="wrapper">
 <!-- NAVBAR -->
            <div class="navbar-wrapper">
-      <div class="container">
+      <div class="container-fluid">
 
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
+        <nav class="navbar navbar-custom navbar-static-top">
+          <div class="container-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -28,25 +72,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Project name</a>
+              <a class="navbar-brand" href="#">Blitz</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
+
+                <li class="active"><a href="#"><span>Homepage</span>Home</a></li>
+                <li><a href="#about"><span>Who Are We ?</span>About</a></li>
+                <li><a href="#contact"><span>My Portfolio</span>Projects</span></a></li>
+                <li><a href="#contact"><span>Latest News</span>Blog</span></a></li>
+                <li><a href="#contact"><span>Get In Touch</span>Contact</span></a></li>
               </ul>
             </div>
           </div>
@@ -55,6 +90,147 @@
       </div>
     </div>
 <!-- End NAVBAR -->
+
+<!-- SLIDER -->
+<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+<div style="position:relative;">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/slides/sliderOne.jpg" alt="...">
+           <div class="carousel-caption">
+              <h2>Check Out OUR latest PROJECTS</h2>
+              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+            </div>
+  
+    </div>
+    <div class="item">
+      <img src="images/slides/sliderTwo.jpg" alt="...">
+           <div class="carousel-caption">
+              <h2>Guarantee 5 Star Quality Work</h2>
+              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+            </div>
+    </div>
+    <div class="item">
+      <img src="images/slides/sliderThree.jpg" alt="...">
+           <div class="carousel-caption">
+              <h2>Stay connected by reading the blog</h2>
+              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+            </div>
+    </div>
+    <!-- Static heading -->
+
+        <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+  </ol>
+  </div>
+
+</div>
+
+ 
+</div> <!-- Carousel -->
+
+<section class="featuredSection">
+<div class="container-fluid nopadding">
+
+<div calss="row">
+<article class="featureBlock featureBlockOne">
+<div class="col-md-4">
+
+<h4><i class="icon-search icon-2x pull-left"></i> Check Out OUR latest PROJECTS</h4>
+   <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.</p>
+<a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
+</div>
+</article>
+<article class="featureBlock featureBlockTwo">
+<div class="col-md-4">
+
+<h4><i class="icon-star-empty icon-2x pull-left"></i>Guarantee 5 Star Quality Work</h4>
+   <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.</p>
+<a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
+</div>
+</article>
+<article class="featureBlock featureBlockThree">
+<div class="col-md-4">
+
+<h4><i class="icon-file-text icon-2x pull-left"></i>Stay connected by reading the blog</h4>
+   <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.</p>
+<a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
+        </div>
+</article>
+
+    </div>
+
+</div>
+</section>
+<section id="CurrentProjects">
+   
+   
+<div class="container-fluid nopadding">
+  <div class="col-md-12">
+<header> 
+    <h4>My latest Work</h4>
+</header>
+</div>
+<article id="boxOne" class="rotate">
+    <div class="col-sm-6 col-md-3 projectBlock pull-left">
+<img src="images/project1.jpg"/>
+<h4>Vallarta Brochure</h4>
+  <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. </p>
+  <a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
+    </div>
+</article>
+<article id="boxTwo" class="rotate">
+ <div class="col-sm-6 col-md-3 projectBlock">
+<img src="images/project2.jpg" />
+<h4>Business cards</h4>
+   <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. </p>
+  <a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
+    </div>
+</article>
+<article id="boxThree" class="rotate">
+ <div class="col-sm-6 col-md-3 projectBlock">
+<img src="images/project3.jpg" />
+<h4>Business cards</h4>
+  <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. </p>
+  <a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
+    </div>
+</article>
+<article id="boxFour" class="rotate">
+ <div class="col-sm-6 col-md-3 projectBlock">
+<img src="images/project4.jpg" />
+<h4>Website design</h4>
+   <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. </p>
+  <a href="" class="more"><i class="icon-double-angle-right"></i>Find out More</a>
+    </div>
+</article>
+
+</div>
+</article>
+</section>
+</div> <!-- End of Wrapper-->
+<footer>
+<div class="container-fluid">
+<div class="footer_wrap">
+<div class="row">
+<div class="col-md-6">
+<p class="credit_left">All Content Copyright 2012 - Blitz. All Rights Reserved. </p>
+</div>
+
+<div class="col-md-6">
+<p class="credit_right">Site Developed by <span>Best PSD Freebies</span></p>
+</div>
+
+</div>
+</div>
+
+</div>
+</footer>
+<!-- END SLIDER -->
 
     </body>
 </html>
