@@ -7,7 +7,7 @@ LiberationSans-Regular for the body text
 
 Jquery for the scroll to target transitions.
 
-The Bootstrap Caropusel has been moderatly modified to seperate the captions 
+The Bootstrap Carousel has been moderatly modified to seperate the captions 
 along with some modifyied CSS3 transistions to enable a fade transistion on the slides
 instead of the deafult slide to the left.
 
