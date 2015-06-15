@@ -35,6 +35,10 @@ $(".featureBlockTwo").inViewport(function(px){
 $(".featureBlockThree").inViewport(function(px){
     if(px) $(this).addClass("triggerBoxFeatThree") ;
 });
+
+$(".top_wrapper").inViewport(function(px){
+    if(px) $(this).addClass("triggerTopBox") ;
+});
 });
 
 
@@ -43,4 +47,14 @@ $( document ).ready(function() {
   $(".nav li a").hover(function () {
     $(this).children(".nav li a span").toggleClass("onHover");
  });
+});
+
+
+
+// Back To Top
+$( document ).ready(function() {
+$('a.top').click(function(){
+$(document.body).animate({scrollTop : 0},800);
+return false;
+});
 });
