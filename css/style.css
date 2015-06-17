@@ -539,6 +539,7 @@ position: relative;
 {
   position:relative;
   bottom:-200px; 
+  bottom:0px\9;
    transition: all 0.4s;  ease; 
    -webkit-transition: all 0.4s;  ease;
   -moz-transition: all 0.4s;  ease;
@@ -549,6 +550,7 @@ position: relative;
 {
   position:relative;
   bottom:-200px; 
+  bottom:0px\9;
    transition: all 0.5s;  ease; 
    -webkit-transition: all 0.5s;  ease;
   -moz-transition: all 0.5s;  ease;
@@ -560,6 +562,7 @@ position: relative;
 {
   position:relative;
   bottom:-200px; 
+  bottom:0px\9;
    transition: all 0.6s;  ease; 
    -webkit-transition: all 0.6s;  ease;
   -moz-transition: all 0.6s;  ease;
@@ -573,6 +576,7 @@ position: relative;
 {
   position:relative;
   bottom:-200px; 
+  bottom:0px\9;
    transition: all 0.2s;  ease; 
    -webkit-transition: all 0.2s;  ease;
   -moz-transition: all 0.2s;  ease;
@@ -583,6 +587,7 @@ position: relative;
 {
   position:relative;
   bottom:-200px; 
+  bottom:0px\9;
    transition: all 0.2s;  ease; 
    -webkit-transition: all 0.2s;  ease;
   -moz-transition: all 0.2s;  ease;
@@ -594,6 +599,7 @@ position: relative;
 {
   position:relative;
   bottom:-200px; 
+  bottom:0px\9;
    transition: all 0.2s;  ease; 
    -webkit-transition: all 0.2s;  ease;
   -moz-transition: all 0.2s;  ease;
@@ -777,6 +783,7 @@ width:100%;
   position:relative;
 top:0px;
 left:-600px;
+left:0px\9;
  transition: all 1.7s;  ease; 
    -webkit-transition: all 1.7s;  ease;
   -moz-transition: all 1.7s;  ease;
@@ -788,6 +795,7 @@ left:-600px;
   position:relative;
 top:0px;
 left:-1200px;
+left:0px\9;
  transition: all 1.5s;  ease; 
    -webkit-transition: all 1.5s;  ease;
   -moz-transition: all 1.5s;  ease;
@@ -809,6 +817,7 @@ padding:20px 0px;
   position:relative;
 top:0px;
 right:-1200px;
+right:0px\9;
  transition: all 1.5s;  ease; 
    -webkit-transition: all 1.5s;  ease;
   -moz-transition: all 1.5s;  ease;
@@ -820,6 +829,7 @@ right:-1200px;
   position:relative;
 top:0px;
 right:-600px;
+right:0px\9;
  transition: all 1.7s;  ease; 
    -webkit-transition: all 1.7s;  ease;
   -moz-transition: all 1.7s;  ease;
@@ -832,6 +842,7 @@ right:-600px;
 .slideIn.triggerBoxOne
 { 
 transform: translate(600px,0px); 
+transform: translate(0px,0px)\9;
    -webkit-transform: translate: (600px,0px)
   -moz-transform: -moz-translate: (600px,0px);
   -o-transform: translate: (600px,0px);
@@ -840,6 +851,7 @@ transform: translate(600px,0px);
 .slideIn.triggerBoxTwo
 {
   transform: translate(1200px,0px); 
+  transform: translate(0px,0px)\9;
   -webkit-transform: translate: (1200px,0px);
   -moz-transform: -moz-translate: (1200px,0px);
   -o-transform: translate: (1200px,0px);
@@ -848,6 +860,7 @@ transform: translate(600px,0px);
 .slideIn.triggerBoxThree
 { 
   transform: translate(-1200px,0px);
+  transform: translate(0px,0px)\9;
     -webkit-transform: translate: (-1200px,0px);
   -moz-transform: -translate: (-1200px,0px);
   -o-transform: translate: (-1200px,0px);
@@ -858,6 +871,7 @@ transform: translate(600px,0px);
 .slideIn.triggerBoxFour
 { 
 transform: translate(-600px,0px);
+transform: translate(0px,0px)\9;
    -webkit-transform: translate: (-600px,0px);
   -moz-transform: translate: (-600px,0px);
   -o-transform: translate: (-600px,0px);
@@ -868,6 +882,7 @@ transform: translate(-600px,0px);
 .triggerBoxFeatOne
 {
 transform: translate(0px, -200px);
+transform: translate(0px,0px)\9;
    -webkit-transform: translate: (0px, -200px);
   -moz-transform: translate: (0px, -200px);
   -o-transform: translate: (0px, -200px); 
@@ -876,6 +891,7 @@ transform: translate(0px, -200px);
 .triggerBoxFeatTwo
 {
 transform: translate(0px, -200px);
+transform: translate(0px,0px)\9;
    -webkit-transform: translate: (0px, -200px);
   -moz-transform: translate: (0px, -200px);
   -o-transform: translate: (0px, -200px); 
@@ -884,6 +900,7 @@ transform: translate(0px, -200px);
 .triggerBoxFeatThree
 {
 transform: translate(0px, -200px);
+transform: translate(0px,0px)\9;
    -webkit-transform: translate: (0px, -200px);
   -moz-transform: translate: (0px, -200px);
   -o-transform: translate: (0px, -200px); 
@@ -895,6 +912,7 @@ transform: translate(0px, -200px);
 .triggerBoxFeatOne
 {
 transform: translate(0px, -200px);
+transform: translate(0px,0px)\9;
    -webkit-transform: translate: (0px, -200px);
   -moz-transform: translate: (0px, -200px);
   -o-transform: translate: (0px, -200px); 
@@ -903,6 +921,7 @@ transform: translate(0px, -200px);
 .triggerBoxFeatTwo
 {
 transform: translate(0px, -200px);
+transform: translate(0px,0px)\9;
    -webkit-transform: translate: (0px, -200px);
   -moz-transform: translate: (0px, -200px);
   -o-transform: translate: (0px, -200px); 
@@ -911,6 +930,7 @@ transform: translate(0px, -200px);
 .triggerBoxFeatThree
 {
 transform: translate(0px, -200px);
+transform: translate(0px,0px)\9;
    -webkit-transform: translate: (0px, -200px);
   -moz-transform: translate: (0px, -200px);
   -o-transform: translate: (0px, -200px); 
