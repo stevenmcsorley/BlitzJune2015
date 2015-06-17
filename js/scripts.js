@@ -1,10 +1,10 @@
 
 $( document ).ready(function() {
     $('.carousel, .outsideCaptions').carousel({
-        interval: 3000
+        interval: 8000
     })
     $('#outsideCaptions').carousel({
-            interval: 3000
+            interval: 8000
         })
     });
 
